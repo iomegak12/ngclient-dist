@@ -8,4 +8,4 @@ RUN npm install
 
 EXPOSE 7070
 
-ENTRYPOINT [ "npm", "start" ]
+RUN [ "npm", "start" ]
