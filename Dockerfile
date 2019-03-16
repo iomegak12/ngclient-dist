@@ -8,4 +8,4 @@ RUN npm install
 
 EXPOSE 7070
 
-RUN [ "npm", "start" ]
+ENTRYPOINT node_modules\.bin\http-server -p 7070
