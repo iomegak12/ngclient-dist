@@ -1,4 +1,4 @@
-FROM stefanscherer/node-windows
+FROM node:alpine
 
 COPY . /app
 
@@ -8,4 +8,4 @@ RUN npm install
 
 EXPOSE 7070
 
-ENTRYPOINT node_modules\.bin\http-server -p 7070
+ENTRYPOINT node_modules/.bin/http-server -p 7070
